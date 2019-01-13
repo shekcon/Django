@@ -127,4 +127,8 @@ dmypy.json
 .pyre/
 /media
 /static
+
+# migrations
+/resources
+**/migrations/**
 # End of https://www.gitignore.io/api/django
