@@ -80,12 +80,16 @@ WSGI_APPLICATION = 'Houses.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+pswd = ''
+if os.environ['LOGNAME'] == 'shekcon':
+    pswd = '123456'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'btredb',
         'USER': 'postgres',
-        "PASSWORD": '',
+        "PASSWORD": pswd,
         'HOST': 'localhost'
     }
 }
