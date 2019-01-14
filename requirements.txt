@@ -1,0 +1,7 @@
+django
+pylint
+pylint-django
+pep8
+psycopg2
+psycopg2-binary
+pillow
